@@ -1,0 +1,28 @@
+package com.vyom.Actions;
+
+import com.vyom.base.AbstractServiceImpl;
+import com.vyom.chatbot.core.ChatBotLogger;
+
+public class TwoNoSubstraction extends AbstractServiceImpl {
+	
+
+	public void preProcessing() {
+		ChatBotLogger.logger.info("From TwoNoSubstraction preProcessing");
+	}
+
+	public void processing() {
+		double result = Double.parseDouble(userDataList.get(0)) - Double.parseDouble(userDataList.get(1));
+		ChatBotLogger.logger.info("Final result is : " + result);
+	}
+
+	public void postProcessing() {
+		ChatBotLogger.logger.info("From TwoNoSubstraction postProcessing");
+	}
+	public void validateNum1Value(String input) {
+		ChatBotLogger.logger.info("In TwoNoSubstraction class validate first Value : " + input);		
+	}
+	public void validateNum2Value(String input) {
+		ChatBotLogger.logger.info("In TwoNoSubstraction class validate second Value : " + input);		
+	}
+	
+}

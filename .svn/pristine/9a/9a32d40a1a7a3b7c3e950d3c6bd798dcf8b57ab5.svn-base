@@ -1,0 +1,27 @@
+package com.vyom.Actions;
+
+import com.vyom.base.AbstractServiceImpl;
+import com.vyom.chatbot.core.ChatBotLogger;
+
+public class TwoNoDivision extends AbstractServiceImpl {
+	
+
+	public void preProcessing() {
+		ChatBotLogger.logger.info("From TwoNodivision preProcessing");
+	}
+
+	public void processing() {
+		double result = Double.parseDouble(userDataList.get(0)) / Double.parseDouble(userDataList.get(1));
+		ChatBotLogger.logger.info("Final result is : " + result);
+	}
+
+	public void postProcessing() {
+		ChatBotLogger.logger.info("From TwoNodivision postProcessing");
+	}
+	public void validateNum1Value(String input) {
+		ChatBotLogger.logger.info("In TwoNoDivision class validate first Value : " + input);		
+	}
+	public void validateNum2Value(String input) {
+		ChatBotLogger.logger.info("In TwoNoDivision class validate second Value : " + input);		
+	}
+}

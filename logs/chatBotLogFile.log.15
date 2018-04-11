@@ -1,0 +1,41 @@
+Apr 11, 2018 2:38:10 PM com.vyom.chatbot.core.ChatBotLogger LogGenerator
+INFO: 
+===================	chatBot Log	===================
+
+Apr 11, 2018 2:38:10 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Veg
+2. NonVeg
+3. Snacks
+4. Drinks
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 2:38:12 PM com.vyom.chatbot.core.ReadChatBotMenuXML MenuOptions
+INFO: nextCallMap in else : {0=0, 1=1_2, 2=2_2, 3=3_2, #=1_1, 4=4_2, *=}
+Apr 11, 2018 2:38:12 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Samosa
+2. Sandwich
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 2:38:15 PM com.vyom.base.AbstractServiceImpl init
+INFO: From AbstractServiceImpl inIt
+Apr 11, 2018 2:38:15 PM com.vyom.Actions.SamosaData preProcessing
+INFO: From Samosa data preProcessing
+Apr 11, 2018 2:38:15 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter how many samosa you want? :
+Apr 11, 2018 2:38:18 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Wrong Input..
+Please enter how many samosa you want? :
+Apr 11, 2018 2:38:20 PM com.vyom.Actions.SamosaData validateSamosaTypeValue
+INFO: In SamosaData class validate first Value :4
+Apr 11, 2018 2:38:20 PM com.vyom.Actions.SamosaData processing
+INFO: Final result is : Your have ordered 4Samosa
+Apr 11, 2018 2:38:20 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Your have ordered 4Samosa

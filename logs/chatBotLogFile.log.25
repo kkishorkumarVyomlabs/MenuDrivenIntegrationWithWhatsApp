@@ -1,0 +1,42 @@
+Apr 11, 2018 3:11:55 PM com.vyom.chatbot.core.ChatBotLogger LogGenerator
+INFO: 
+===================	chatBot Log	===================
+
+Apr 11, 2018 3:11:55 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Veg
+2. NonVeg
+3. Snacks
+4. Drinks
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 3:11:58 PM com.vyom.chatbot.core.ReadChatBotMenuXML MenuOptions
+INFO: nextCallMap in else : {0=0, 1=1_2, 2=2_2, 3=3_2, #=1_1, 4=4_2, *=}
+Apr 11, 2018 3:11:58 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Soft drink
+2. Hard drink
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 3:12:00 PM com.vyom.base.AbstractServiceImpl init
+INFO: From AbstractServiceImpl inIt
+Apr 11, 2018 3:12:00 PM com.vyom.Actions.HardDrinkData preProcessing
+INFO: From HardDrink data preProcessing
+Apr 11, 2018 3:12:00 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter which type of Hard drink you want? :
+Apr 11, 2018 3:12:03 PM com.vyom.Actions.HardDrinkData validateHardDrinkTypeValue
+INFO: In HardDrinkData class validate first Value : a
+Apr 11, 2018 3:12:03 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter quantity of Hard drink you want:
+Apr 11, 2018 3:12:04 PM com.vyom.Actions.HardDrinkData validateHardDrinkQuantityValue
+INFO: In HardDrinkData class validate second Value :1
+Apr 11, 2018 3:12:04 PM com.vyom.Actions.HardDrinkData processing
+INFO: Final result is : Your Hard drink is: a1 and Quantity is:
+Apr 11, 2018 3:12:04 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Your Hard drink is: a1 and Quantity is:

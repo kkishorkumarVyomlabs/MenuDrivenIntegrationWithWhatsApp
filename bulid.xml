@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="WhatAppChatBOT" default="xmlbean" basedir=".">
+    <description>Builds, tests, and runs the project Test.</description>
+    <property name="build.dir" value="./" />
+	<property name="generatedClasses" value="${basedir}/src/" />
+    
+    <path id="classpath">
+    	<fileset dir="lib">
+    	    <include name="**/*.jar" />
+    	</fileset>
+    </path>
+	
+	<taskdef name="xmlbean" classname="org.apache.xmlbeans.impl.tool.XMLBean" classpath="lib/POI/xmlbeans-2.3.0.jar" />
+	<echo>"Generated classes : " + ${generatedClasses}</echo>
+
+	<target name="xmlbean">
+		<xmlbean destfile="${basedir}\JAR\chatmenu_schema.jar" classpathref="classpath" srcgendir="${generatedClasses}" failonerror="true" javasource="1.7"> 
+			<fileset dir="${basedir}\schemas" casesensitive="yes"> 
+				<include name="test.xsd" /> 
+			</fileset>
+			
+		</xmlbean>
+	</target>
+</project>

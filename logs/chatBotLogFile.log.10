@@ -1,0 +1,43 @@
+Apr 11, 2018 12:03:31 PM com.vyom.chatbot.core.ChatBotLogger LogGenerator
+INFO: 
+===================	chatBot Log	===================
+
+Apr 11, 2018 12:03:31 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Veg
+2. NonVeg
+3. Snacks
+4. Drinks
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 12:03:33 PM com.vyom.chatbot.core.ReadChatBotMenuXML MenuOptions
+INFO: nextCallMap in else : {0=0, 1=1_2, 2=2_2, 3=3_2, #=1_1, 4=4_2, *=}
+Apr 11, 2018 12:03:33 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Paneer
+2. Vegetables
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 12:03:35 PM com.vyom.base.AbstractServiceImpl init
+INFO: From AbstractServiceImpl inIt
+Apr 11, 2018 12:03:35 PM com.vyom.Actions.VegetablesData preProcessing
+INFO: From vegetable data preProcessing
+Apr 11, 2018 12:03:35 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter which vegetable you want?:
+Apr 11, 2018 12:03:39 PM com.vyom.Actions.VegetablesData validateVegTypeValue
+INFO: In vegetable data class validate first Value : onion
+Apr 11, 2018 12:03:39 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter quantity of vegetable:
+Apr 11, 2018 12:03:47 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Wrong Input..
+Please enter quantity of vegetable:
+Apr 11, 2018 12:03:52 PM com.vyom.Actions.VegetablesData processing
+INFO: Final result is : Your have purchased onion and quantity of vegetables is:3 and quantity of vegetables is:
+Apr 11, 2018 12:03:52 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Your have purchased onion and quantity of vegetables is:3 and quantity of vegetables is:

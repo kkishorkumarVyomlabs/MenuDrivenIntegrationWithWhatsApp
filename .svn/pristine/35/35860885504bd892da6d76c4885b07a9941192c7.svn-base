@@ -1,0 +1,74 @@
+package com.vyom.chatbot.core;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.commons.lang3.StringUtils;
+
+import noNamespace.AEChatBotMenuDocument.AEChatBotMenu.MenuNode.ActionNode;
+import noNamespace.AEChatBotMenuDocument.AEChatBotMenu.MenuNode.ActionNode.DataCollection.DataNode;
+
+public class ActionDetails {
+
+	String actionClass;
+	List<DataCollectionDetails> dataCollectionList;
+	
+	private ActionDetails(String actionClass, List<DataCollectionDetails> dataCollectionList) {
+		this.actionClass = actionClass;
+		this.dataCollectionList = dataCollectionList;
+	}
+	
+	public static ActionDetails Create(ActionNode actionNode) throws Exception {
+		initializeActionPreprocess(actionNode);
+		List<DataCollectionDetails> dataCollectionList = new ArrayList<DataCollectionDetails>();
+		for (DataNode dataNode : actionNode.getDataCollection().getDataNodeArray()) {
+			dataCollectionList.add(new DataCollectionDetails(dataNode.getDisplayText(), dataNode.getInputName(), "", dataNode.getValidationMethod()));
+		}
+		return new ActionDetails(actionNode.getActionClass(), dataCollectionList);
+	}
+	
+	private static void initializeActionPreprocess(ActionNode actionNode) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
+		Class cls = Class.forName("com.vyom.Actions."+actionNode.getActionClass());
+		Object obj = cls.newInstance();
+		Method method = cls.getMethod("initExecute");
+		method.invoke(obj);
+	}
+	
+	public String getUserParam(String lastParamAsked, String lastMsg) throws Exception {
+		String userParam = "";
+		for (DataCollectionDetails dataCollectionDetails : this.dataCollectionList) {
+			if("".equals(dataCollectionDetails.getUserInput()) && dataCollectionDetails.getDisplayText().equals(lastParamAsked)) {
+				validateUserInput(this.actionClass, dataCollectionDetails.getValidationMethod(), lastMsg);
+				dataCollectionDetails.setUserInput(lastMsg);
+			}
+			if("".equals(dataCollectionDetails.getUserInput())) {
+				userParam = dataCollectionDetails.getDisplayText();
+				return userParam;
+			}
+		}
+		if(StringUtils.isBlank(userParam) && this.dataCollectionList.size() > 0) {
+			userParam = (String) executeProcessing(this.actionClass, "processing", this.dataCollectionList);
+		}
+		return userParam;
+	}
+	
+	private Object executeProcessing(String className, String methodName, List<DataCollectionDetails> dataCollectionList) throws Exception {
+		Class cls = Class.forName("com.vyom.Actions."+className);
+		Object obj = cls.newInstance();
+		Method method = cls.getDeclaredMethod(methodName, List.class);
+		Object obj1 = method.invoke(obj, dataCollectionList);
+		if(obj1 instanceof String) {
+			return obj1;
+		}
+		return "";
+	}
+	
+	private void validateUserInput(String className, String validateMethodName, String lastMsg) throws Exception {
+		Class cls = Class.forName("com.vyom.Actions."+className);
+		Object obj = cls.newInstance();
+		Method method = cls.getMethod(validateMethodName, String.class);
+		method.invoke(obj, lastMsg);
+	}
+}

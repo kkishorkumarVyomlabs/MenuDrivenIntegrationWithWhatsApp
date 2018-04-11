@@ -1,0 +1,55 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AEChatBotMenu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="MenuID"/>
+        <xs:element type="xs:string" name="MenuName"/>
+        <xs:element type="xs:string" name="DisplayText"/>
+        <xs:element type="xs:string" name="StartMenuNodeId"/>
+        <xs:element name="MenuNode" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContainerDisplayNode" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Type"/>
+                    <xs:element type="xs:string" name="Id"/>
+                    <xs:element type="xs:string" name="Name"/>
+                    <xs:element type="xs:string" name="Position"/>
+                    <xs:element type="xs:string" name="DisplayText"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ActionNode" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="ActionClass"/>
+                    <xs:element name="dataCollection">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="dataNode" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="DisplayText" minOccurs="0"/>
+                                <xs:element type="xs:string" name="InputName" minOccurs="0"/>
+                                <xs:element type="xs:string" name="DataType" minOccurs="0"/>
+                                <xs:element type="xs:string" name="ValidationMethod" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="ActionId" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="currentNodeId" use="optional"/>
+            <xs:attribute type="xs:string" name="parentNodeId" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

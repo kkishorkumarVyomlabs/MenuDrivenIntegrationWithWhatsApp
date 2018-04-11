@@ -1,0 +1,45 @@
+Apr 11, 2018 2:23:44 PM com.vyom.chatbot.core.ChatBotLogger LogGenerator
+INFO: 
+===================	chatBot Log	===================
+
+Apr 11, 2018 2:23:44 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Veg
+2. NonVeg
+3. Snacks
+4. Drinks
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 2:23:46 PM com.vyom.chatbot.core.ReadChatBotMenuXML MenuOptions
+INFO: nextCallMap in else : {0=0, 1=1_2, 2=2_2, 3=3_2, #=1_1, 4=4_2, *=}
+Apr 11, 2018 2:23:46 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Chicken
+2. Sea Food
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 2:23:49 PM com.vyom.base.AbstractServiceImpl init
+INFO: From AbstractServiceImpl inIt
+Apr 11, 2018 2:23:49 PM com.vyom.Actions.ChickenData preProcessing
+INFO: From Chicken data preProcessing
+Apr 11, 2018 2:23:49 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter which type of chicken dish you want? :
+Apr 11, 2018 2:23:57 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Wrong Input..
+Please enter which type of chicken dish you want? :
+Apr 11, 2018 2:24:03 PM com.vyom.Actions.ChickenData validateChickenTypeValue
+INFO: In ChickenData class validate first Value : butter chicken
+Apr 11, 2018 2:24:03 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter half/full dish you want:
+Apr 11, 2018 2:24:07 PM com.vyom.Actions.ChickenData validateHalfFulldishValue
+INFO: In ChickenData class validate second Value : half
+Apr 11, 2018 2:24:07 PM com.vyom.Actions.ChickenData processing
+INFO: Final result is : Your order is ready with butter chicken and quantity is:half and quantity is:
+Apr 11, 2018 2:24:07 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Your order is ready with butter chicken and quantity is:half and quantity is:

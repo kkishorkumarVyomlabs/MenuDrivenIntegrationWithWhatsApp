@@ -1,0 +1,32 @@
+package com.vyom.Actions;
+
+import com.vyom.base.AbstractServiceImpl;
+import com.vyom.chatbot.core.ChatBotLogger;
+
+public class TwoNoAddition extends AbstractServiceImpl {
+
+	
+	public void preProcessing() {
+		ChatBotLogger.logger.info("From TwoNoAddition preProcessing");
+	}
+
+	public void processing() {
+		
+		int result=0;
+		for(int i=0;i<userDataList.size();i++) {
+			result = result + Integer.parseInt(userDataList.get(i));
+		}
+		ChatBotLogger.logger.info("Final result is : " + result);
+	}
+
+	public void postProcessing() {
+		ChatBotLogger.logger.info("From TwoNoAddition postProcessing");
+	}
+	
+	public void validateNum1Value(String input) {
+		ChatBotLogger.logger.info("In TwoNoAddition class validate first Value : " + input);		
+	}
+	public void validateNum2Value(String input) {
+		ChatBotLogger.logger.info("In TwoNoAddition class validate second Value : " + input);		
+	}
+}

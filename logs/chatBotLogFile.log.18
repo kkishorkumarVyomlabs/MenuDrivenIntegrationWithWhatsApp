@@ -1,0 +1,48 @@
+Apr 11, 2018 2:49:07 PM com.vyom.chatbot.core.ChatBotLogger LogGenerator
+INFO: 
+===================	chatBot Log	===================
+
+Apr 11, 2018 2:49:07 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Veg
+2. NonVeg
+3. Snacks
+4. Drinks
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 2:49:10 PM com.vyom.chatbot.core.ReadChatBotMenuXML MenuOptions
+INFO: nextCallMap in else : {0=0, 1=1_2, 2=2_2, 3=3_2, #=1_1, 4=4_2, *=}
+Apr 11, 2018 2:49:10 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Soft drink
+2. Hard drink
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 2:49:12 PM com.vyom.base.AbstractServiceImpl init
+INFO: From AbstractServiceImpl inIt
+Apr 11, 2018 2:49:12 PM com.vyom.Actions.SoftDrinkData preProcessing
+INFO: From SoftDrink data preProcessing
+Apr 11, 2018 2:49:12 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter which type of soft drink you want? :
+Apr 11, 2018 2:49:16 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Wrong Input..
+Please enter which type of soft drink you want? :
+Apr 11, 2018 2:49:23 PM com.vyom.Actions.SoftDrinkData validateSoftDrinkTypeValue
+INFO: In SoftDrinkData class validate first Value : coca cola
+Apr 11, 2018 2:49:23 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter quantity of soft drink you want:
+Apr 11, 2018 2:49:25 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Wrong Input..
+Please enter quantity of soft drink you want:
+Apr 11, 2018 2:49:29 PM com.vyom.Actions.SoftDrinkData validateSoftDrinkQuantityValue
+INFO: In SoftDrinkData class validate second Value :4
+Apr 11, 2018 2:49:29 PM com.vyom.Actions.SoftDrinkData processing
+INFO: Final result is : Your soft drink is coca cola and Quantity is:4 and Quantity is:
+Apr 11, 2018 2:49:29 PM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Your soft drink is coca cola and Quantity is:4 and Quantity is:

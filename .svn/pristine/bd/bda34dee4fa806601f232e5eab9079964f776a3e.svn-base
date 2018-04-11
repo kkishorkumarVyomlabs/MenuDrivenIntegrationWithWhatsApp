@@ -1,0 +1,79 @@
+package com.vyom.base;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.vyom.Actions.ThreeNoAddition;
+
+import noNamespace.AEChatBotMenuDocument.AEChatBotMenu.MenuNode.ActionNode;
+import noNamespace.AEChatBotMenuDocument.AEChatBotMenu.MenuNode.ActionNode.DataCollection.DataNode;
+
+public abstract class AbstractServiceImpl implements BaseService{
+	public ArrayList<String> userDataList = new ArrayList<String>() ;
+
+	public void init() {
+		System.out.println("From AbstractServiceImpl inIt");
+	}
+
+	public  void dataCollection(ActionNode actionNode) {
+		
+		DataNode[] DataNodeArray = actionNode.getDataCollection().getDataNodeArray();
+		for (DataNode dataNode : DataNodeArray) {
+			System.out.println(dataNode.getDisplayText());
+			String userInput = new Scanner(System.in).nextLine(); 
+			if(!validateField(this.getClass().getName(), dataNode.getValidationMethod(), userInput)) {break;}else {
+				userDataList.add(userInput);
+			}
+		}
+
+		System.out.println("User Provided value :- " + userDataList.toString() );
+	}
+	
+	public boolean validateField(String className, String methodName, String userInput) {
+		Class cls;
+		try {
+			cls = Class.forName(className);
+			Object obj = cls.newInstance();
+			Method method = cls.getDeclaredMethod(methodName, String.class);
+			method.invoke(obj, userInput);
+			return true;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+
+	public void preProcessing() {
+		System.out.println("From AbstractServiceImpl preProcessing");
+	}
+
+	public void processing() {
+		System.out.println("From AbstractServiceImpl processing");
+	}
+
+	public void postProcessing() {
+		System.out.println("From AbstractServiceImpl postProcessing");
+	}
+
+	public void response() {
+		System.out.println("From AbstractServiceImpl response");
+	}
+	
+	public void close() {
+		System.out.println("From AbstractServiceImpl close");
+	}
+	
+	public void execute(ActionNode obj) {		
+		init();
+		preProcessing();
+		dataCollection(obj);
+		processing();
+		postProcessing();
+		response();
+		close();
+	}
+}

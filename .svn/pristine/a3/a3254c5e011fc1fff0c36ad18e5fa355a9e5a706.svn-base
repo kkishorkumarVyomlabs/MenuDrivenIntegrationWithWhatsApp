@@ -1,0 +1,211 @@
+package com.vyom.chatbot.core;
+
+import java.io.File;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+import javax.xml.XMLConstants;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+
+import org.apache.commons.lang3.StringUtils;
+import org.xml.sax.SAXException;
+
+import noNamespace.AEChatBotMenuDocument;
+import noNamespace.AEChatBotMenuDocument.AEChatBotMenu.MenuNode;
+import noNamespace.AEChatBotMenuDocument.AEChatBotMenu.MenuNode.ActionNode;
+import noNamespace.AEChatBotMenuDocument.AEChatBotMenu.MenuNode.ContainerDisplayNode;
+
+public class ReadChatBotMenuXML {
+	
+	/*public static Scanner scanner = new Scanner(System.in); 
+	public static Map<String, ActionNode> actionNodeDetailsMap = new HashMap<String, ActionNode>();
+	public static String baseActionPackage = "com.vyom.Actions.";*/
+	
+	
+//	public static NodeList menuList;
+	public static AEChatBotMenuDocument aeChatBotMenuDocument;
+	public static MenuNode[] menunodeArray = null;
+//	public static String userInput = "";
+	public static ReadChatBotMenuXML readChatBotMenuXML;
+	
+	public static ChatBotLogger botLogger;
+	
+	static {
+		readChatBotMenuXML = new ReadChatBotMenuXML();
+		botLogger = new ChatBotLogger();
+	}
+
+	public ReadChatBotMenuXML() {
+		
+		String xsdPath = ".\\schemas\\CalcMenu.xsd";
+		String xmlPath = ".\\CalcMenu.xml";
+		try {
+			if(!validateXMLSchema(xsdPath, xmlPath))
+				return;	//	To validate XML with XSD
+			File xmlFile = new File(xmlPath);
+			aeChatBotMenuDocument = AEChatBotMenuDocument.Factory.parse(xmlFile);
+			menunodeArray = aeChatBotMenuDocument.getAEChatBotMenu().getMenuNodeArray();
+		}catch (Exception e) {
+			e.printStackTrace();			
+		}
+	}
+	
+	public static void main(String argv[]) throws Exception
+	{
+		readChatBotMenuXML = new ReadChatBotMenuXML();
+		ChatBotLogger.logger.info("Hi This is first log statement");
+		String userInput="hi";
+		UserDetails user = new UserDetails();
+		do {
+			String output = readChatBotMenuXML.MenuOptions(user);
+			if(output.equals("Action Node")) {
+				readChatBotMenuXML.actionExecution(user.getCurrentNodeId());
+			}
+			ChatBotLogger.logger.info(output);
+			userInput = ApplicationConstatnt.scanner.nextLine();
+			user.setLastMsg(userInput);
+		} while (!userInput.equals("0"));
+	}
+	
+	public void userRequest(String userNo, String requestMsg) {
+		try {
+			UserDetails user = verifyUser(userNo, requestMsg);
+			String output = readChatBotMenuXML.MenuOptions(user);
+			if(output.equals("Action Node")) {
+				readChatBotMenuXML.actionExecution(user.getCurrentNodeId());
+			}
+			ChatBotLogger.logger.info(output);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+	
+	public UserDetails verifyUser(String userNo, String requestMsg) {
+		UserDetails user = ApplicationConstatnt.userDetailsMap.get(userNo);
+		if(user == null) {
+			user = new UserDetails(userNo);
+			ApplicationConstatnt.userDetailsMap.put(userNo, user);
+		}
+		user.setLastMsg(requestMsg);
+		return user;
+	}
+	
+	public static String actionCall(UserDetails userDetails) throws Exception {
+		ActionDetails actionDetails = userDetails.getActionDetails();
+		if(actionDetails == null) {
+			
+			actionDetails = ActionDetails.Create(ApplicationConstatnt.actionNodeDetailsMap.get(userDetails.getCurrentNodeId()));
+			userDetails.setActionDetails(actionDetails);
+		}
+		String temp = actionDetails.getUserParam(userDetails.getLastParamAsked(), userDetails.getLastMsg());
+		userDetails.setLastParamAsked(temp);
+		if(StringUtils.isBlank(temp)) {
+			userDetails.setType("CN");
+			/*userDetails.setLastMsg("");
+			temp = ReadChatBotMenuXML.MenuOptions(userDetails);*/
+		}
+		return temp;
+	}
+
+	public static void actionExecution(String actionId) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
+		ActionNode actionNode = ApplicationConstatnt.actionNodeDetailsMap.get(actionId);
+		Class cls = Class.forName(ApplicationConstatnt.baseActionPackage+actionNode.getActionClass());
+		Object obj = cls.newInstance();
+		Method method = cls.getMethod(ApplicationConstatnt.methodName, ActionNode.class);
+		method.invoke(obj, actionNode);
+	}
+
+	public static String MenuOptions( UserDetails userDetails) throws Exception{
+		String msg="";
+		String userInput = userDetails.getLastMsg();
+		if(userInput == null)
+			return "Invalid input please restart session with Hi";
+		if(userInput.equals(""))
+		userDetails.setCurrentNodeId("1_1"); //			this.currentNodeId = "1_1";
+		else {
+			if(userInput.equals("0")) {
+				userDetails.getNextCallMap().clear(); //nextCallMap.clear();
+				return "Thanks for using chat services.";
+			}
+			else { 
+				ChatBotLogger.logger.info("nextCallMap in else : "+ userDetails.getNextCallMap());
+				userDetails.setCurrentNodeId(userDetails.getNextCallMap().get(userInput));
+//				this.currentNodeId = userDetails.getNextCallMap().get(userInput);
+//				if(this.currentNodeId == null)return "Invalid Input";
+				if(userDetails.getCurrentNodeId() == null) return "Invalid Input";
+			}
+		}
+/*		if(Application.actionNodeDetailsMap.containsKey(userDetails.getCurrentNodeId()))
+		{						
+			return "Action Node";
+		}*/
+		userDetails.getNextCallMap().clear(); //nextCallMap.clear();
+		for(int i=0;i<menunodeArray.length;i++) {
+			MenuNode menunode = menunodeArray[i];
+			if(userDetails.getCurrentNodeId().equals(menunode.getCurrentNodeId())) {
+				userDetails.setParentId(menunode.getParentNodeId());
+//				this.parentId = menunode.getParentNodeId();
+				ContainerDisplayNode[] containerDisplayNodeArray = menunode.getContainerDisplayNodeArray();
+				for (int j = 0; j < containerDisplayNodeArray.length; j++) {
+					ContainerDisplayNode containerDisplayNode = containerDisplayNodeArray[j];
+					
+					userDetails.setPosition(containerDisplayNode.getPosition());
+					userDetails.setDisplayText(containerDisplayNode.getDisplayText());
+					userDetails.setId(containerDisplayNode.getId());
+					userDetails.setType(containerDisplayNode.getType());
+					
+					/*this.position = containerDisplayNode.getPosition();
+					this.displayText=containerDisplayNode.getDisplayText();
+					this.id = containerDisplayNode.getId();
+					this.type = containerDisplayNode.getType();*/
+
+					
+					msg = msg + "\n" + userDetails.getPosition() + ". " + userDetails.getDisplayText();
+					userDetails.getNextCallMap().put(userDetails.getPosition(), userDetails.getId());
+					
+					/*msg = msg + "\n" + this.position + ". " + this.displayText;
+					nextCallMap.put(this.position, this.id);*/
+
+				}
+				for (ActionNode actionNode : menunode.getActionNodeArray()) {
+					if(!ApplicationConstatnt.actionNodeDetailsMap.containsKey(actionNode.getActionId())) {
+						ApplicationConstatnt.actionNodeDetailsMap.put(actionNode.getActionId(), actionNode);
+					}
+				}
+				userDetails.getNextCallMap().put("*", userDetails.getParentId() );	
+				msg = msg + "\n" +"*. Go to previous menu";
+				userDetails.getNextCallMap().put("#","1_1");
+				msg = msg + "\n" +"#. Go to Main menu";
+				userDetails.getNextCallMap().put("0","0");
+				msg = msg + "\n" +"0. To Exit";
+				msg = msg + "\n\nEnter a sequence number which you want to select : ";
+				//				logger.info(msg);
+				//logger.info(actionNodeDetailsMap.toString());
+				//				 map_UserNo_nextCallMap.put(userNo, nextCallMap);
+				return msg;
+			} 
+		} 
+		return "Invalid option, Please try again..";
+	}
+
+	public static boolean validateXMLSchema(String xsdPath, String xmlPath){
+		try {
+			SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+			Schema schema = factory.newSchema(new File(xsdPath));
+			Validator validator = schema.newValidator();
+			validator.validate(new StreamSource(new File(xmlPath)));
+		} catch (IOException e){
+			ChatBotLogger.logger.info("Exception: "+e.getMessage());
+			return false;
+		}catch(SAXException e1){
+			ChatBotLogger.logger.info("SAX Exception: "+e1.getMessage());
+			return false;
+		}
+		return true;
+	}
+}

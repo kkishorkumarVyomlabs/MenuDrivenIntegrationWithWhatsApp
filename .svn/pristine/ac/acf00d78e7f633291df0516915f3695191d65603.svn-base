@@ -1,0 +1,38 @@
+package com.vyom.chatbot.core;
+
+public class RequestDispatcher {
+	
+	
+	public static String requestProcess(String userNo, String requestMsg ) throws Exception {
+		
+		UserDetails userDetails = isNewUser(userNo, requestMsg);
+		RequestHandler handler = new RequestHandler();
+		String response = handler.getRequest(userDetails);
+		return response;
+	}
+	
+	
+	private static UserDetails isNewUser(String userNo, String requestMsg) {
+		
+		UserDetails user = ApplicationConstatnt.userDetailsMap.get(userNo);
+		if(user == null) {
+			user = new UserDetails(userNo);
+			user.setType("CN");
+			ApplicationConstatnt.userDetailsMap.put(userNo, user);
+		}
+		user.setLastMsg(requestMsg);
+		return user;
+	}
+	
+	public static void main(String[] args) throws Exception {
+		String userInput = "";
+		do {
+			String resp = RequestDispatcher.requestProcess("123", userInput);
+			ChatBotLogger.logger.info(resp);
+			userInput = ApplicationConstatnt.scanner.nextLine();
+		} while (!userInput.equals("0"));
+
+	}
+
+}
+

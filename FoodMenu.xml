@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AEChatBotMenu >
+	<MenuID>101</MenuID>
+	<MenuName>FoodMenu</MenuName>
+	<DisplayText>Please review menu list</DisplayText>
+	<StartMenuNodeId>1</StartMenuNodeId>
+	<MenuNode currentNodeId="1_1" parentNodeId="">	
+		
+		<ContainerDisplayNode>
+			<Type>CN</Type>
+			<Id>1_2</Id>
+			<Name>Veg</Name>
+			<Position>1</Position>
+			<DisplayText>Veg</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<Type>CN</Type>
+			<Id>2_2</Id>
+			<Name>NonVeg</Name>
+			<Position>2</Position>
+			<DisplayText>NonVeg</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<Type>CN</Type>
+			<Id>3_2</Id>
+			<Name>Snacks</Name>
+			<Position>3</Position>
+			<DisplayText>Snacks</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<Type>CN</Type>
+			<Id>4_2</Id>
+			<Name>Drinks</Name>
+			<Position>4</Position>
+			<DisplayText>Drinks</DisplayText>
+		</ContainerDisplayNode>
+	
+	</MenuNode>
+	
+	<MenuNode currentNodeId="1_2" parentNodeId="1_1">
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000001</Id>
+			<Name>Paneer</Name>
+			<Position>1</Position>
+			<DisplayText>Paneer</DisplayText>
+		</ContainerDisplayNode>
+		
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000002</Id>
+			<Name>Vegetables</Name>
+			<Position>2</Position>
+			<DisplayText>Vegetables</DisplayText>
+		</ContainerDisplayNode>
+		<ActionNode ActionId="1000001">
+		
+			<ActionClass>com.vyom.Actions.PaneerData</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter which type of paneer dish you want? :</DisplayText>
+					<InputName>paneerType</InputName>
+					<DataType>String</DataType>
+					<ValidationMethod>validatePaneerTypeValue</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter how many dishes you want:</DisplayText>
+					<InputName>howManydish</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validatehowManydishValue</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+		
+		<ActionNode ActionId="1000002">
+			<ActionClass>com.vyom.Actions.VegetablesData</ActionClass>
+			<dataCollection>
+				
+				<dataNode>
+					<DisplayText>Please enter which vegetable you want?:</DisplayText>
+					<InputName>vegType</InputName>
+					<DataType>String</DataType>
+					<ValidationMethod>validateVegTypeValue</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter quantity of vegetable:</DisplayText>
+					<InputName>vegQuantity</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateVegQuantityValue</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+	</MenuNode>
+		
+	 <MenuNode currentNodeId = "2_2" parentNodeId = "1_1">
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000003</Id>
+			<Name>Chicken</Name>
+			<Position>1</Position>
+			<DisplayText>Chicken</DisplayText>
+		</ContainerDisplayNode>
+		
+		<ContainerDisplayNode>
+		
+			<Type>AN</Type>
+			<Id>1000004</Id>
+			<Name>Sea Food</Name>
+			<Position>2</Position>
+			<DisplayText>Sea Food</DisplayText>
+		</ContainerDisplayNode>	
+		
+			<ActionNode ActionId="1000003">
+		
+			<ActionClass>com.vyom.Actions.ChickenData</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter which type of chicken dish you want? :</DisplayText>
+					<InputName>chickenType</InputName>
+					<DataType>String</DataType>
+					<ValidationMethod>validateChickenTypeValue</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter half/full dish you want:</DisplayText>
+					<InputName>halfFulldish</InputName>
+					<DataType>String</DataType>
+					<ValidationMethod>validateHalfFulldishValue</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+			
+		
+		
+			<ActionNode ActionId="1000004">
+		
+			<ActionClass>com.vyom.Actions.SeaFoodData</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Which type of sea food you want? :</DisplayText>
+					<InputName>seaFoodType</InputName>
+					<DataType>String</DataType>
+					<ValidationMethod>validateSeaFoodTypeValue</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>how many dish you want:</DisplayText>
+					<InputName>seaFooddish</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateSeaFooddishValue</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+	</MenuNode>
+		
+	 <MenuNode currentNodeId = "3_2" parentNodeId = "1_1">
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000005</Id>
+			<Name>Samosa</Name>
+			<Position>1</Position>
+			<DisplayText>Samosa</DisplayText>
+		</ContainerDisplayNode>
+		
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000006</Id>
+			<Name>Sandwich</Name>
+			<Position>2</Position>
+			<DisplayText>Sandwich</DisplayText>
+		</ContainerDisplayNode>
+		
+		<ActionNode ActionId="1000005">
+		
+			<ActionClass>com.vyom.Actions.SamosaData</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter how many samosa you want? :</DisplayText>
+					<InputName>samosaType</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateSamosaTypeValue</ValidationMethod>
+				</dataNode>
+				
+			</dataCollection>
+		</ActionNode>
+		
+		<ActionNode ActionId="1000006">
+		
+			<ActionClass>com.vyom.Actions.SandwichData</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter which type of sandwich you want? :</DisplayText>
+					<InputName>sandwichType</InputName>
+					<DataType>String</DataType>
+					<ValidationMethod>validateSandwichTypeValue</ValidationMethod>
+				</dataNode>
+				
+				<dataNode>
+					<DisplayText>Please enter how many dishes of sandwich you want? :</DisplayText>
+					<InputName>howManysandwich</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateHowManySandwichValue</ValidationMethod>
+				</dataNode>
+				
+			</dataCollection>
+		</ActionNode>
+		
+		
+		
+	</MenuNode>
+		
+	<MenuNode currentNodeId="4_2" parentNodeId="1_1">
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000007</Id>
+			<Name>Soft drink</Name>
+			<Position>1</Position>
+			<DisplayText>Soft drink</DisplayText>
+		</ContainerDisplayNode>
+		
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000008</Id>
+			<Name>Hard drink</Name>
+			<Position>2</Position>
+			<DisplayText>Hard drink</DisplayText>
+		</ContainerDisplayNode>
+		
+		<ActionNode ActionId="1000007">
+		
+			<ActionClass>com.vyom.Actions.SoftDrinkData</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter which type of soft drink you want? :</DisplayText>
+					<InputName>softDrinkType</InputName>
+					<DataType>String</DataType>
+					<ValidationMethod>validateSoftDrinkTypeValue</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter quantity of soft drink you want:</DisplayText>
+					<InputName>softDrinkQuantity</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateSoftDrinkQuantityValue</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+		
+		<ActionNode ActionId="1000008">
+		
+			<ActionClass>com.vyom.Actions.HardDrinkData</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter which type of Hard drink you want? :</DisplayText>
+					<InputName>hardDrinkType</InputName>
+					<DataType>String</DataType>
+					<ValidationMethod>validateHardDrinkTypeValue</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter quantity of Hard drink you want:</DisplayText>
+					<InputName>HardDrinkQuantity</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateHardDrinkQuantityValue</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+		
+		
+		
+	</MenuNode>
+	
+	<!-- <MenuNode MenuLevel = "1_2_1" ParentLevel = "1_2">
+		<ContainerDisplayNode>
+			<UniqueId>000124</UniqueId>
+			<ChildId></ChildId>
+			<Name>Butter Paneer</Name>
+			<Position>1</Position>
+			<DisplayText>Butter Paneer</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000125</UniqueId>
+			<ChildId></ChildId>
+			<Name>Paneer Tikka</Name>
+			<Position>2</Position>
+			<DisplayText>Paneer Tikka</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000126</UniqueId>
+			<ChildId></ChildId>
+			<Name>Shahi Paneer</Name>
+			<Position>3</Position>
+			<DisplayText>Shahi Paneer</DisplayText>
+		</ContainerDisplayNode>
+	</MenuNode>
+
+	 <MenuNode MenuLevel = "1_2_2" ParentLevel = "1_2">
+		<ContainerDisplayNode>
+			<UniqueId>000127</UniqueId>
+			<ChildId></ChildId>
+			<Name>Cabbage</Name>
+			<Position>1</Position>
+			<DisplayText>Cabbage</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000128</UniqueId>
+			<ChildId></ChildId>
+			<Name>Capsicum</Name>
+			<Position>2</Position>
+			<DisplayText>Capsicum</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000129</UniqueId>
+			<ChildId></ChildId>
+			<Name>Cauliflower</Name>
+			<Position>3</Position>
+			<DisplayText>Cauliflower</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000130</UniqueId>
+			<ChildId></ChildId>
+			<Name>Cluster Beans</Name>
+			<Position>4</Position>
+			<DisplayText>Cluster Beans</DisplayText>
+		</ContainerDisplayNode>
+	</MenuNode> 
+		
+	<MenuNode MenuLevel = "1_2_3" ParentLevel = "1_2">
+		<ContainerDisplayNode>
+			<UniqueId>000131</UniqueId>
+			<ChildId></ChildId>
+			<Name>Mung Bean</Name>
+			<Position>1</Position>
+			<DisplayText>Mung Bean</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000132</UniqueId>
+			<ChildId></ChildId>
+			<Name>Pea</Name>
+			<Position>2</Position>
+			<DisplayText>Pea</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000133</UniqueId>
+			<ChildId></ChildId>
+			<Name>Lentil</Name>
+			<Position>3</Position>
+			<DisplayText>Lentil</DisplayText>
+		</ContainerDisplayNode>
+	</MenuNode>
+	
+	<MenuNode MenuLevel = "2_2_1" ParentLevel = "2_2">
+		<ContainerDisplayNode>
+			<UniqueId>000134</UniqueId>
+			<ChildId></ChildId>
+			<Name>Butter Chicken</Name>
+			<Position>1</Position>
+			<DisplayText>Butter Chicken</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000135</UniqueId>
+			<ChildId></ChildId>
+			<Name>Chicken Handi</Name>
+			<Position>2</Position>
+			<DisplayText>Chicken Handi</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000136</UniqueId>
+			<ChildId></ChildId>
+			<Name>Chicken Tikka</Name>
+			<Position>3</Position>
+			<DisplayText>Chicken Tikka</DisplayText>
+		</ContainerDisplayNode>
+	</MenuNode>
+	
+	<MenuNode MenuLevel = "2_2_2" ParentLevel = "2_2">
+		<ContainerDisplayNode>
+			<UniqueId>000137</UniqueId>
+			<ChildId></ChildId>
+			<Name>Fish Curry</Name>
+			<Position>1</Position>
+			<DisplayText>Fish Curry</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000138</UniqueId>
+			<ChildId></ChildId>
+			<Name>Fish Tikka Masala</Name>
+			<Position>2</Position>
+			<DisplayText>Fish Tikka Masala</DisplayText>
+		</ContainerDisplayNode>
+		
+	</MenuNode>
+	
+	<MenuNode MenuLevel = "4_2_1" ParentLevel = "4_2">
+		<ContainerDisplayNode>
+			<UniqueId>000139</UniqueId>
+			<ChildId></ChildId>
+			<Name>Cocacola</Name>
+			<Position>1</Position>
+			<DisplayText>Cocacola</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000140</UniqueId>
+			<ChildId></ChildId>
+			<Name>Cream Soda</Name>
+			<Position>2</Position>
+			<DisplayText>Cream Soda</DisplayText>
+		</ContainerDisplayNode>
+		
+	</MenuNode>
+	
+	<MenuNode MenuLevel = "4_2_2" ParentLevel = "4_2"> 
+		<ContainerDisplayNode>
+			<UniqueId>000141</UniqueId>
+			<ChildId></ChildId>
+			<Name>Vodka</Name>
+			<Position>1</Position>
+			<DisplayText>Vodka</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<UniqueId>000142</UniqueId>
+			<ChildId></ChildId>
+			<Name>Whisky</Name>
+			<Position>2</Position>
+			<DisplayText>Whisky</DisplayText>
+		</ContainerDisplayNode>
+		
+	</MenuNode> -->
+	
+</AEChatBotMenu>

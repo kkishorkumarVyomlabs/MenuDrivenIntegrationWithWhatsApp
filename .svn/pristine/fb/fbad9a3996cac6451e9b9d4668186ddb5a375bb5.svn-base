@@ -1,0 +1,42 @@
+package com.vyom.Actions;
+
+import com.vyom.base.AbstractServiceImpl;
+import com.vyom.chatbot.core.ChatBotLogger;
+
+public class ThreeNoAddition extends AbstractServiceImpl {
+	
+	public void init() {
+		ChatBotLogger.logger.info("From ThreeNoAddition init");
+	}
+
+	public void preProcessing() {
+		ChatBotLogger.logger.info("From ThreeNoAddition preProcessing");
+	}
+
+	public void processing() {
+		int result=0;
+		for(int i=0;i<userDataList.size();i++) {
+			result = result + Integer.parseInt(userDataList.get(i));
+		}
+		ChatBotLogger.logger.info("Final result is : " + result);
+	}
+
+	public void postProcessing() {
+		ChatBotLogger.logger.info("From ThreeNoAddition postProcessing");
+	}
+	
+	public void validateNum1Value(String input) {
+		ChatBotLogger.logger.info("In ThreeNoAddition class validate first Value : " + input);		
+	}
+	public void validateNum2Value(String input) {
+		ChatBotLogger.logger.info("In ThreeNoAddition class validate second Value : " + input);		
+	}
+	public void validateNum3Value(String input) {
+		ChatBotLogger.logger.info("In ThreeNoAddition class validate third Value : " + input);		
+	}
+	
+	public void initExecute() {
+		init();
+		preProcessing();
+	}
+}

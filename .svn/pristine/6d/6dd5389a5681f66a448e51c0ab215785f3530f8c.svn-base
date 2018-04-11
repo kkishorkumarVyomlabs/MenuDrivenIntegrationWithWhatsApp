@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AEChatBotMenu>
+
+	<MenuID>101</MenuID>
+	<MenuName>Calculator</MenuName>
+	<DisplayText>Please Select appropriate options</DisplayText>
+	<StartMenuNodeId>1</StartMenuNodeId>
+<!-- 	<StartMenuNodeId123>1</StartMenuNodeId123> -->
+	<MenuNode currentNodeId="1_1" parentNodeId="">
+		<ContainerDisplayNode>
+			<Type>CN</Type>
+			<Id>1_2</Id>
+			<Name>Addition</Name>
+			<Position>1</Position>
+			<DisplayText>Addition</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<Type>CN</Type>
+			<Id>2_2</Id>
+			<Name>Multiplication</Name>
+			<Position>2</Position>
+			<DisplayText>Multiplication</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<Type>CN</Type>
+			<Id>3_2</Id>
+			<Name>Substraction</Name>
+			<Position>3</Position>
+			<DisplayText>Substraction</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<Type>CN</Type>
+			<Id>4_2</Id>
+			<Name>Division</Name>
+			<Position>4</Position>
+			<DisplayText>Division</DisplayText>
+		</ContainerDisplayNode>
+	</MenuNode>
+
+	<MenuNode currentNodeId="1_2" parentNodeId="1_1">
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000001</Id>
+			<Name>Two no</Name>
+			<Position>1</Position>
+			<DisplayText>Two no</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000002</Id>
+			<Name>Three No</Name>
+			<Position>2</Position>
+			<DisplayText>Three No</DisplayText>
+		</ContainerDisplayNode>
+		<ActionNode ActionId="1000001">
+			<ActionClass>TwoNoAddition</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter first number for two No Addition :</DisplayText>
+					<InputName>num1</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum1Value</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter second number for two No Addition :</DisplayText>
+					<InputName>num2</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum2Value</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+		<ActionNode ActionId="1000002">
+			<ActionClass>ThreeNoAddition</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter first number for three No Addition :</DisplayText>
+					<InputName>num1</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum1Value</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter second number for three No Addition :</DisplayText>
+					<InputName>num2</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum2Value</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter third number for three No Addition :</DisplayText>
+					<InputName>num3</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum3Value</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+	</MenuNode>
+
+	<MenuNode currentNodeId="2_2" parentNodeId="1_1">
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000003</Id>
+			<Name>Two no</Name>
+			<Position>1</Position>
+			<DisplayText>Two no</DisplayText>
+		</ContainerDisplayNode>
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000004</Id>
+			<Name>Three No</Name>
+			<Position>2</Position>
+			<DisplayText>Three No</DisplayText>
+		</ContainerDisplayNode>
+
+		<ActionNode ActionId="1000003">
+			<ActionClass>TwoNoMultiplication</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter first number for Two No Multiplication :</DisplayText>
+					<InputName>num1</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum1Value</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter second number for Two No Multiplication :</DisplayText>
+					<InputName>num2</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum2Value</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+		<ActionNode ActionId="1000004">
+			<ActionClass>ThreeNoMultiplication</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter first number for ThreeNo Multiplication :</DisplayText>
+					<InputName>num1</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum1Value</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter second number for ThreeNo Multiplication :</DisplayText>
+					<InputName>num2</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum2Value</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter third number for ThreeNo Multiplication :</DisplayText>
+					<InputName>num3</InputName>
+					<DataType>numeric</DataType>
+					<ValidationMethod>validateNum3Value</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+	</MenuNode>
+
+	<MenuNode currentNodeId="3_2" parentNodeId="1_1">
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000005</Id>
+			<Name>Two no</Name>
+			<Position>1</Position>
+			<DisplayText>Two no</DisplayText>
+		</ContainerDisplayNode>
+
+		<ActionNode ActionId="1000005">
+			<ActionClass>TwoNoSubstraction</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter first number for Substraction :</DisplayText>
+					<InputName>num1</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum1Value</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter second number for Substraction :</DisplayText>
+					<InputName>num2</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum2Value</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+	</MenuNode>
+
+	<MenuNode currentNodeId="4_2" parentNodeId="1_1">
+		<ContainerDisplayNode>
+			<Type>AN</Type>
+			<Id>1000006</Id>
+			<Name>Two no</Name>
+			<Position>1</Position>
+			<DisplayText>Two no</DisplayText>
+		</ContainerDisplayNode>
+
+		<ActionNode ActionId="1000006">
+			<ActionClass>TwoNoDivision</ActionClass>
+			<dataCollection>
+				<dataNode>
+					<DisplayText>Please enter first number for Division :</DisplayText>
+					<InputName>num1</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum1Value</ValidationMethod>
+				</dataNode>
+				<dataNode>
+					<DisplayText>Please enter second number for Division :
+					</DisplayText>
+					<InputName>num2</InputName>
+					<DataType>Numeric</DataType>
+					<ValidationMethod>validateNum2Value</ValidationMethod>
+				</dataNode>
+			</dataCollection>
+		</ActionNode>
+	</MenuNode>
+</AEChatBotMenu>

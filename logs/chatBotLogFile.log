@@ -1,0 +1,38 @@
+Apr 11, 2018 11:29:28 AM com.vyom.chatbot.core.ChatBotLogger LogGenerator
+INFO: 
+===================	chatBot Log	===================
+
+Apr 11, 2018 11:29:28 AM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Veg
+2. NonVeg
+3. Snacks
+4. Drinks
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 11:29:32 AM com.vyom.chatbot.core.ReadChatBotMenuXML MenuOptions
+INFO: nextCallMap in else : {0=0, 1=1_2, 2=2_2, 3=3_2, #=1_1, 4=4_2, *=}
+Apr 11, 2018 11:29:32 AM com.vyom.chatbot.core.RequestDispatcher main
+INFO: 
+1. Paneer
+2. Vegetables
+*. Go to previous menu
+#. Go to Main menu
+0. To Exit
+
+Enter a sequence number which you want to select : 
+Apr 11, 2018 11:29:34 AM com.vyom.base.AbstractServiceImpl init
+INFO: From AbstractServiceImpl inIt
+Apr 11, 2018 11:29:34 AM com.vyom.Actions.PaneerData preProcessing
+INFO: From paneer data preProcessing
+Apr 11, 2018 11:29:34 AM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Please enter which type of paneer dish you want? :
+Apr 11, 2018 11:29:40 AM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Wrong Input..
+Please enter which type of paneer dish you want? :
+Apr 11, 2018 11:29:46 AM com.vyom.chatbot.core.RequestDispatcher main
+INFO: Wrong Input..
+Please enter which type of paneer dish you want? :

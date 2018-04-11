@@ -1,0 +1,526 @@
+Apr 11, 2018 3:48:23 PM com.vyom.chatbot.core.ChatBotLogger LogGenerator
+INFO: 
+===================	chatBot Log	===================
+
+Apr 11, 2018 3:48:23 PM com.vyom.whatsapp.whatsAppMain init
+INFO: Startig INIT 
+Apr 11, 2018 3:48:45 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 1
+Apr 11, 2018 3:48:46 PM com.vyomChatBot.WhatsApp userList
+INFO: chat Title (Customer No/Name): Pooja Pawar
+Apr 11, 2018 3:48:46 PM com.vyomChatBot.WhatsApp userList
+INFO: customerLastMsg try: Whisky
+Apr 11, 2018 3:48:50 PM com.vyomChatBot.WhatsApp userList
+INFO: -----------------------------------------------
+Apr 11, 2018 3:48:50 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 1
+Apr 11, 2018 3:48:50 PM com.vyomChatBot.WhatsApp userList
+INFO: chat Title (Customer No/Name): Pooja Pawar
+Apr 11, 2018 3:48:51 PM com.vyomChatBot.WhatsApp userList
+INFO: customerLastMsg try: Hi
+Apr 11, 2018 3:48:51 PM com.vyom.chatbot.core.ChatBotLogger LogGenerator
+INFO: 
+===================	chatBot Log	===================
+
+Apr 11, 2018 3:48:56 PM com.vyomChatBot.WhatsApp userList
+INFO: -----------------------------------------------
+Apr 11, 2018 3:48:56 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:57 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:58 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:48:59 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:00 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:01 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:02 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:03 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:03 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:03 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 1
+Apr 11, 2018 3:49:03 PM com.vyomChatBot.WhatsApp userList
+INFO: chat Title (Customer No/Name): Pooja Pawar
+Apr 11, 2018 3:49:03 PM com.vyomChatBot.WhatsApp userList
+INFO: customerLastMsg try: 4
+Apr 11, 2018 3:49:03 PM com.vyom.chatbot.core.ReadChatBotMenuXML MenuOptions
+INFO: nextCallMap in else : {0=0, 1=1_2, 2=2_2, 3=3_2, #=1_1, 4=4_2, *=}
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: -----------------------------------------------
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:08 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:09 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:10 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:10 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:10 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:10 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:10 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:10 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:10 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 1
+Apr 11, 2018 3:49:10 PM com.vyomChatBot.WhatsApp userList
+INFO: chat Title (Customer No/Name): Pooja Pawar
+Apr 11, 2018 3:49:11 PM com.vyomChatBot.WhatsApp userList
+INFO: customerLastMsg try: 2
+Apr 11, 2018 3:49:11 PM com.vyom.base.AbstractServiceImpl init
+INFO: From AbstractServiceImpl inIt
+Apr 11, 2018 3:49:11 PM com.vyom.Actions.HardDrinkData preProcessing
+INFO: From HardDrink data preProcessing
+Apr 11, 2018 3:49:14 PM com.vyomChatBot.WhatsApp userList
+INFO: -----------------------------------------------
+Apr 11, 2018 3:49:14 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:14 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:15 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:16 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:17 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:18 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:18 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 1
+Apr 11, 2018 3:49:18 PM com.vyomChatBot.WhatsApp userList
+INFO: chat Title (Customer No/Name): Pooja Pawar
+Apr 11, 2018 3:49:18 PM com.vyomChatBot.WhatsApp userList
+INFO: customerLastMsg try: Whisky
+Apr 11, 2018 3:49:18 PM com.vyom.Actions.HardDrinkData validateHardDrinkTypeValue
+INFO: In HardDrinkData class validate first Value : Whisky
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: -----------------------------------------------
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:22 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:23 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:24 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:25 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 1
+Apr 11, 2018 3:49:26 PM com.vyomChatBot.WhatsApp userList
+INFO: chat Title (Customer No/Name): Pooja Pawar
+Apr 11, 2018 3:49:26 PM com.vyomChatBot.WhatsApp userList
+INFO: customerLastMsg try: 4
+Apr 11, 2018 3:49:26 PM com.vyom.Actions.HardDrinkData validateHardDrinkQuantityValue
+INFO: In HardDrinkData class validate second Value :4
+Apr 11, 2018 3:49:26 PM com.vyom.Actions.HardDrinkData processing
+INFO: Final result is : Your Hard drink is: Whisky and Quantity is:4 and Quantity is:
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: -----------------------------------------------
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:30 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:31 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:32 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:33 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:34 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:35 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:35 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:35 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 1
+Apr 11, 2018 3:49:35 PM com.vyomChatBot.WhatsApp userList
+INFO: chat Title (Customer No/Name): Pooja Pawar
+Apr 11, 2018 3:49:35 PM com.vyomChatBot.WhatsApp userList
+INFO: customerLastMsg try: 0
+Apr 11, 2018 3:49:39 PM com.vyomChatBot.WhatsApp userList
+INFO: -----------------------------------------------
+Apr 11, 2018 3:49:39 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:39 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:39 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:39 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
+Apr 11, 2018 3:49:39 PM com.vyomChatBot.WhatsApp userList
+INFO: Number of users in Queue : 0
